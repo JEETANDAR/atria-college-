@@ -215,4 +215,37 @@ document.addEventListener('click', event => {
         searchResults.innerHTML = '';
         searchResults.style.visibility = "hidden";
     }
-});
+});itemElement.addEventListener('click', () => {
+    // ... other code
+  
+    // Assuming you have the videoId for this item
+    const youtubeUrl = `https://www.youtube.com`;
+    window.location.href = youtubeUrl;
+  });
+  // Assuming you have a database of movies with corresponding YouTube video IDs
+const movieData = {
+    // ... your movie data
+    'movie1': {
+      title: 'Movie 1',
+      image: 'https://buffer.com/library/free-images/',
+      videoId: 'dQw4w9WgXcQ' // Example YouTube video ID
+    },
+    // ... other movies
+  };
+  
+  // ... rest of your code
+  
+  itemElement.addEventListener('click', () => {
+    const movieId = item.id; // Assuming you have the movie ID
+    const videoId = movieData[movieId].videoId;
+    const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
+    window.location.href = youtubeUrl;
+  });
+  itemElement.addEventListener('click', () => {
+    // ... other code
+  
+    // Assuming you have the videoId for this item
+    const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
+    window.location.href = youtubeUrl;
+  });
+  
