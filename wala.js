@@ -2,11 +2,16 @@
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 const goToWatchlistBtn = document.getElementById('goToWatchlist');
+const goToLoginBtn = document.getElementById('goToLogin');
+
 
 // Event listener to navigate to WatchList page
 goToWatchlistBtn.addEventListener('click', () => {
     window.location.href = 'watchList/watchlist.html';
 });
+goToLoginBtn.addEventListener('click', () => {
+    window.location.href = './Pages/profilePage.html';
+})
 
 const scrollDistance = 900;
 
