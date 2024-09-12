@@ -1,0 +1,16 @@
+.loginPage {
+    background-color: rgb(15, 15, 15) ;
+}
+
+.display-5, .colorWhite {
+    color: white;
+}
+label {
+    color: gray;
+}
+
+.iconBackground {
+    background-color: rgba(255, 255, 255, 0.575);
+    padding: 2px;
+    border-radius: 10px;
+}
